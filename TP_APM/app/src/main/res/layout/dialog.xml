@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimaryDark"
+
+    >
+
+    <LinearLayout
+
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialog2image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center|bottom"
+
+            android:padding="10dp"
+            android:src="@drawable/medecine">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:id="@+id/dialog2name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:text="MedecinEvent"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:textColor="@color/darkblue"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:progressDrawable="@color/darkblue"
+
+            android:layout_height="2dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/darkblue"
+            android:text="MedecinEvent est un evenement scientifique déstiné a tous les gens intéresés par la medecine."
+            android:id="@+id/dialog2ings"
+            android:layout_gravity="center"
+            android:inputType="textMultiLine"
+            android:textStyle="normal"
+            />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:weightSum="2">
+             <android.support.v7.widget.CardView
+
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+
+                 android:layout_weight="3"
+                 android:clickable="true"
+
+
+                 android:foreground="?android:attr/selectableItemBackground">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                      android:gravity="center"
+                     android:orientation="vertical"
+                     android:background="@color/darkblue">
+
+                     <ImageView
+                         android:layout_width="64dp"
+                         android:layout_height="64dp"
+                         android:src="@drawable/ic_inscrire"
+
+                         android:background="@color/green"
+
+                         android:padding="10dp">
+
+                     </ImageView>
+
+                     <View
+                         android:layout_width="160dp"
+                         android:layout_height="1dp"
+                         android:layout_margin="10dp"
+                         android:background="@color/colorPrimaryDark" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:padding="5dp"
+                         android:text="Signaler "
+                         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                         android:textColor="@android:color/black" />
+
+                 </LinearLayout>
+             </android.support.v7.widget.CardView>
+
+             <android.support.v7.widget.CardView
+                 android:layout_weight="2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+
+
+                 android:clickable="true"
+
+
+                 android:foreground="?android:attr/selectableItemBackground">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:gravity="center"
+                     android:orientation="vertical"
+                     android:background="@color/darkblue">
+
+                     <ImageView
+                         android:layout_width="64dp"
+                         android:layout_height="64dp"
+                         android:src="@drawable/ic_info"
+                         android:background="@color/yello"
+
+                         >
+
+                     </ImageView>
+
+                     <View
+                         android:layout_width="160dp"
+                         android:layout_height="1dp"
+                         android:layout_margin="10dp"
+                         android:background="@color/colorPrimaryDark" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:padding="5dp"
+                         android:text="Information"
+                         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                         android:textColor="@android:color/black" />
+
+                 </LinearLayout>
+             </android.support.v7.widget.CardView>
+
+         </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
